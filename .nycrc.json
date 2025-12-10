@@ -4,10 +4,11 @@
 	  ".mjs"
 	],
 	"include": [
-	  "src/**/*.js"
+	  "src/*.js"
 	],
 	"exclude": [
-	  "test/**/*.js"
+	  "test/**/*.js",
+	  "src/.internal/*.js"
 	],
 	"reporter": [
 	  "text",
