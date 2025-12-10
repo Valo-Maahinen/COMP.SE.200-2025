@@ -15,9 +15,9 @@ describe("unitTests for ceil", () => {
 		expect(ceil(15, -1)).to.equal(20);
 	});
 
-	it("negative precision should round floats up to the nearest tens, hundreds, etc."), () => {
+	it("negative precision should round floats up to the nearest tens, hundreds, etc.", () => {
 		expect(ceil(14.05, -1)).to.equal(20);
-	}
+	});
 
 	it("positive precision should extent decimals when given an integer", () => {
 		expect(ceil(15, 2)).to.equal(15.00);
