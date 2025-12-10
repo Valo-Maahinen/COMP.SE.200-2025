@@ -6,13 +6,14 @@
   "type": "module",
   "scripts": {
     "test": "mocha",
-    "test-coverage": "nyc mocha"
+    "test-coverage": "c8 --reporter=lcov --reporter=text mocha"
   },
   "author": "",
   "license": "MIT",
   "devDependencies": {
+    "c8": "^10.1.3",
     "chai": "^6.0.1",
-    "mocha": "^11.7.2",
-    "nyc": "^15"
+    "cross-env": "^7",
+    "mocha": "^11.7.2"
   }
 }
