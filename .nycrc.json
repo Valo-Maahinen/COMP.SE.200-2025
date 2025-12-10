@@ -1,0 +1,18 @@
+{
+	"extension": [
+	  ".js",
+	  ".mjs"
+	],
+	"include": [
+	  "src/**/*.js"
+	],
+	"exclude": [
+	  "test/**/*.js"
+	],
+	"reporter": [
+	  "text",
+	  "lcov"
+	],
+	"all": true,
+	"check-coverage": false
+  }
