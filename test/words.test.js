@@ -1,0 +1,1 @@
+import words from '../src/words.js';

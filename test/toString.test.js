@@ -1,0 +1,1 @@
+import toString from '../src/toString.js';
