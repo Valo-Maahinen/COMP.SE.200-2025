@@ -34,8 +34,8 @@ describe("unitTests for clamp from test plan", () => {
 		expect(clamp(10, 0, "Sauce")).to.equal(0);
 	});
 
-	it("should return 0 for all inputs being equal", () => {
-		expect(clamp(5, 5, 5)).to.equal(0);
+	it("should return input for all inputs being equal", () => {
+		expect(clamp(5, 5, 5)).to.equal(5);
 	});
 
 });
