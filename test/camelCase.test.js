@@ -1,7 +1,7 @@
 import camelCase from '../src/camelCase.js';
 import { expect } from 'chai';
 
-describe('copilot unit tests', () => {
+describe("unitTests for add by Copilot", () => {
 
 	  it('should convert string to camelCase', () => {
 		expect(camelCase('Hello World')).to.equal('helloWorld');

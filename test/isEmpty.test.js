@@ -14,7 +14,6 @@ describe("unitTests for isEmpty", () => {
         expect(isEmpty(false)).to.be.true;
     });
 
-
     it("should return true for set of size 0", () => {
         const emptySet = new Set();
         expect(isEmpty(emptySet)).to.be.true;
@@ -33,4 +32,5 @@ describe("unitTests for isEmpty", () => {
         const fiveMap = [1, 10, 100, 1000, 10000];
         expect(isEmpty(fiveMap)).to.be.false;
     });
+    
 });

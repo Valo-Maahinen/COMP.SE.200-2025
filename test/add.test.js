@@ -1,7 +1,7 @@
 import add from '../src/add.js';
 import { expect } from 'chai';
 
-describe('copilot unit tests', () => {
+describe("unitTests for add by  Copilot", () => {
 
 	  it('should add two numbers correctly', () => {
 		expect(add(2, 3)).to.equal(5);
