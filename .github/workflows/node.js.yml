@@ -13,7 +13,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v4
-    - name: Use Node.js ${{ matrix.node-version }}
+    - name: Run tests using Node.js
       uses: actions/setup-node@v4
       with:
         node-version: 'lts/*'
@@ -21,7 +21,7 @@ jobs:
     - run: npm install
     - run: npm run build --if-present
     - run: npm run test-coverage
-        # allow Coveralls to still run even when tests fail
+      # allow Coveralls to still run even when tests fail
       continue-on-error: true
 
     - name: Upload to Coveralls
