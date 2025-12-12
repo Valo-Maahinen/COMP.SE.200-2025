@@ -9,6 +9,11 @@ It was prompted with "Please write unit tests using mocha and chai for the follo
 
 describe('unitTests for words by Copilot', () => {
     describe('ASCII and punctuation', () => {
+        /* NOTE BY HUMAN
+        I have no idea why Copilot expects words to just drop &amp. Seems strange.
+        Shouldn't it either keep it as '&amp' or 'amp' but why Copilot expects it
+        to completely disappear is beyond me.
+        */
         it('splits ASCII string with punctuation (example from docs)', () => {
             const input = 'fred, barney, &amp; pebbles'
             const result = words(input)
@@ -23,6 +28,10 @@ describe('unitTests for words by Copilot', () => {
             expect(words('    \t\n  ')).to.deep.equal([])
         })
 
+        /* NOTE BY HUMAN
+        Here Copilot expects words to keep 'is_a' as is instead of cutting it to 'is' and 'a',
+        which I would not. It does however have a reasonable sounding explanation.
+        */
         it('splits words and strips punctuation marks', () => {
             const input = 'Hello! This—is_a-test, okay?'
             // asciiWords will grab contiguous "word-like" ASCII sequences
@@ -92,6 +101,12 @@ describe('unitTests for words by Copilot', () => {
     })
 
     describe('Apostrophes and quotes', () => {
+        /* NOTE BY HUMAN
+        Copilot expects words to turn 'don't' into separate words 'don' and 't'.
+        Words doesn't do this and I would expect it to not do this.
+        It also expects words to drop any apostrophy at the end of a word, which again
+        I would expect it to not drop.
+        */
         it('splits words containing apostrophes into components', () => {
             const input = "don't stop believin'"
             const result = words(input)
