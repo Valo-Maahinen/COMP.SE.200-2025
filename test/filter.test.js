@@ -2,7 +2,10 @@ import filter from '../src/filter.js';
 import { expect } from 'chai';
 
 /*
-These unit tests were created with Copilot.
+These unit tests were created by Copilot.
+It was prompted with "Please write unit tests using mocha and chai for the following js function:
+<insert function here>"
+
 Copliot gave the following note on filter.js and the unit tests reflect this:
 
 ⚠️ Note on behavior
