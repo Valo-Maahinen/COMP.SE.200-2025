@@ -3,7 +3,7 @@ import { expect } from 'chai';
 
 describe("unitTests for toString", () => {
     it("should return empty string for null", () => {
-        expect(toString(null)).to.bequal('');
+        expect(toString(null)).to.equal('');
     });
 
     it("should return empty string for no input", () => {
