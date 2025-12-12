@@ -2,11 +2,11 @@ import toNumber from '../src/toNumber.js';
 import { expect } from 'chai';
 
 describe("unitTests for toNumber", () => {
-    it("should handle no input", () => {
+    it("should return NaN for no input", () => {
         expect(toNumber()).to.be.NaN;
     });
 
-    it("should handle invalid string", () => {
+    it("should return NaN for invalid string", () => {
         expect(toNumber("GabeCube")).to.be.NaN;
     });
 
@@ -14,7 +14,7 @@ describe("unitTests for toNumber", () => {
         expect(toNumber("55")).to.equal(55);
     });
 
-    it("should handle newline", () => {
+    it("should return NaN for newline", () => {
         expect(toNumber("\n")).to.be.NaN;
     });
 
