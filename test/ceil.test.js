@@ -1,7 +1,7 @@
 import ceil from '../src/ceil.js';
 import { expect } from 'chai';
 
-describe("unitTests for ceil", () => {
+describe("unitTests for ceil from test plan", () => {
 
 	it("default precision (0 decimals) should return the same integer when given an integer", () => {
 		expect(ceil(15)).to.equal(15);
