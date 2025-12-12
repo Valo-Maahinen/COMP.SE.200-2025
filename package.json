@@ -6,6 +6,7 @@
   "type": "module",
   "scripts": {
     "test": "mocha",
+    "coverage": "c8 --reporter=text --reporter=text-summary --all --include=src/**/*.js --exclude=src/.internal/** mocha --reporter ./silent-reporter.cjs",
     "test-coverage": "c8 --reporter=lcov --reporter=text --reporter=text-summary --all --include=src/**/*.js --exclude=src/.internal/** mocha"
   },
   "author": "",
